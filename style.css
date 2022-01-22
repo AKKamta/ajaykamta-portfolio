@@ -2,3 +2,36 @@
 body{
     font-family: 'Signika Negative', sans-serif;
 }
+
+:root {
+    --primary-color: #fde047;
+}
+
+/** containers **/
+.container{
+    /* padding-left:1rem;
+    padding-right:1rem; */
+    padding:0rem 1rem;
+}
+.container-center{
+    max-width:600px;
+    margin:auto;
+}
+
+/* links */
+/* You need to look into BEM naming convention method */
+.link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    /* T R B L */
+}
+.link-primary{
+    background-color: var(--primary-color);
+    border-radius: 0.5rem 1rem;    
+    color:white;
+}
+.link-secondary{
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
