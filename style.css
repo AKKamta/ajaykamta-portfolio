@@ -1,118 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap');
-body{
-    font-family: 'Signika Negative', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;700&display=swap');
+
+body {
+    font-family: 'Arima Madurai', cursive;
+    padding: 1rem 7rem;
 }
 
 :root {
-    --primary-color: #fde047;
-    --off-white: #d4d4d8;
+    --primary-color: #84cc16;
+    --off-white: #ecfdf5;
     --dark-grey: #6b7280;
 }
 
-hr{
+hr {
     margin: 2rem 0rem;
 }
 
 /** containers **/
-.container{
+.container {
     /* padding-left:1rem;
     padding-right:1rem; */
-    padding:0rem 1rem;
+    padding: 0rem 1rem;
 }
-.container-center{
-    max-width:600px;
-    margin:auto;
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
 }
 
 /* links */
 /* You need to look into BEM naming convention method */
-.link{
+.link {
     text-decoration: none;
     padding: 0.5rem 1rem;
     /* T R B L */
 }
-.link-primary{
+
+.link-primary {
     background-color: var(--primary-color);
-    border-radius: 0.5rem 1rem;    
-    color:white;
+    border-radius: 0.5rem 1rem;
+    color: white;
 }
-.link-secondary{
+
+.link-secondary {
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
 }
 
 /* list */
-.list-non-bullet{
+.list-non-bullet {
     list-style: none;
 }
-.list-item-inline{
+
+.list-item-inline {
     display: inline;
     padding: 0rem 0.5rem;
 }
 
 /* navigation */
-.navigation{
+.navigation {
     background-color: var(--primary-color);
-    color:white;
+    color: white;
     border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
-.nav-brand{
-    font-weight:bold;
-}
-.nav-pills{
-    text-align:right;
-}
-.navigation .link{
-    color:white;
-}
-.navigation .nav-active{
+
+.nav-brand {
     font-weight: bold;
 }
 
-/* header */
-.hero{
-    padding: 2rem;
+.nav-pills {
+    text-align: right;
 }
-.hero .hero-img{
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .nav-active {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* header */
+.hero {
+    padding: 2rem;
+    padding-top: 5rem;
+    ;
+}
+
+.hero .hero-img {
     max-width: 300px;
     display: block;
     margin: auto;
 }
-.hero .hero-heading{
-    padding-top: 1rem;
-    max-width:500px;
-    margin:auto;
+
+.hero .hero-heading {
+    padding-top: 2rem;
+    max-width: 500px;
+    margin: auto;
     color: var(--dark-grey);
 }
-.hero .hero-heading .heading-inverted{
+
+.hero .hero-heading .heading-inverted {
     color: var(--primary-color);
 }
 
 /* sections */
-.section{
-    padding:2rem;
+.section {
+    padding: 2rem;
 }
-.section h1{
-    text-align:ceter;
+
+.section h1 {
+    text-align: ceter;
 }
-.ow{
+
+.ow {
     background-color: var(--off-white);
 }
 
 /* @footer */
 
-.footer{
-    background-color:var(--primary-color);
-    padding:2rem;
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem;
     border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
     color: white;
-    text-align:center;
+    text-align: center;
 }
-.footer .link{
-    color:white;
-    text-align:center;
+
+.footer-margin {
+    padding: 2rem;
 }
-.footer ul{
+
+.footer-margin div,
+h1,
+p {
+    text-align: center;
+}
+
+.footer-margin h1 {
+    padding-top: 2rem;
+}
+
+.footer-header {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.footer .link {
+    color: white;
+    text-align: center;
+}
+
+.link:hover {
+    color: red;
+}
+
+.footer ul {
     padding-inline-start: 0rem;
 }
