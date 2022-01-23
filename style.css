@@ -99,3 +99,20 @@ hr{
 .ow{
     background-color: var(--off-white);
 }
+
+/* @footer */
+
+.footer{
+    background-color:var(--primary-color);
+    padding:2rem;
+    border-top-right-radius: 1rem;
+    color: white;
+    text-align:center;
+}
+.footer .link{
+    color:white;
+    text-align:center;
+}
+.footer ul{
+    padding-inline-start: 0rem;
+}
